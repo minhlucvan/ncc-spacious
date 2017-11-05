@@ -42,7 +42,7 @@ function wpbeginner_numeric_posts_nav() {
 	if( $wp_query->max_num_pages <= 1 )
 		return;
 
-	$paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
+	$paged = get_query_var( 'page' ) ? absint( get_query_var( 'page' ) ) : 1;
 	$max   = intval( $wp_query->max_num_pages );
 
 	/** Add current page to the array */
