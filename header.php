@@ -55,6 +55,9 @@ wp_head();
 								<?php if (function_exists('the_custom_logo') && has_custom_logo( $blog_id = 0 )) {
 									spacious_the_custom_logo();
 								} ?>
+								<?php
+								$description = get_bloginfo( 'description', 'display' );?>
+								<p id="site-logo-description"><?php echo $description; ?></p>
 							</div><!-- #header-logo-image -->
 						<?php
 						}
@@ -134,8 +137,8 @@ wp_head();
 							<?php
 							if( '' != spacious_header_title() ) {
 							?>
-                        <?php if ( is_home() ) : ?>
-   						   	<h2 class="header-post-title-class"><?php echo spacious_header_title(); ?></h2>
+                        <?php if ( is_page() ) : ?>
+   						   	<h2 class="header-post-title-class title-left"><?php echo spacious_header_title(); ?></h2>
                         <?php else : ?>
                            <h1 class="header-post-title-class"><?php echo spacious_header_title(); ?></h1>
                         <?php endif; ?>

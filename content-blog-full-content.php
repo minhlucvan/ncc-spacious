@@ -27,10 +27,10 @@
       ) );
 		?>
 	</div>
-
-	<?php spacious_entry_meta(); ?>
-
+	
+	
 	<?php
 	do_action( 'spacious_after_post_content' );
-   ?>
+	?>
+	<?php spacious_entry_meta(); ?>
 </article>

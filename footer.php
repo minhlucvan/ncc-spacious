@@ -10,9 +10,10 @@
  */
 ?>
 
-		</div><!-- .inner-wrap -->
-	</div><!-- #main -->
-	<?php do_action( 'spacious_before_footer' ); ?>
+</div><!-- .inner-wrap -->
+</div><!-- #main -->
+</div><!-- #page -->
+<?php do_action( 'spacious_before_footer' ); ?>
 		<footer id="colophon" class="clearfix">
 			<?php get_sidebar( 'footer' ); ?>
 			<div class="footer-socket-wrapper clearfix">
@@ -33,7 +34,6 @@
 			</div>
 		</footer>
 		<a href="#masthead" id="scroll-up"></a>
-	</div><!-- #page -->
 	<?php wp_footer(); ?>
 </body>
 </html>

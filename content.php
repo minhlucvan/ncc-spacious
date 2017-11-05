@@ -47,7 +47,7 @@
 			the_excerpt();
 		?>
 	</div>
-
+	
 	<?php spacious_entry_meta(); ?>
 
 	<?php
