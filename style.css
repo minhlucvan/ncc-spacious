@@ -497,10 +497,6 @@ img#wpstats {
 
 /* =BODY
 ----------------------------------------------- */
-body {
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
 #page {
 	max-width: 1268px;
 	margin: 0 auto;
