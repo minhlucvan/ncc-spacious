@@ -55,9 +55,6 @@ wp_head();
 								<?php if (function_exists('the_custom_logo') && has_custom_logo( $blog_id = 0 )) {
 									spacious_the_custom_logo();
 								} ?>
-								<?php
-								$description = get_bloginfo( 'description', 'display' );?>
-								<p id="site-logo-description"><?php echo $description; ?></p>
 							</div><!-- #header-logo-image -->
 						<?php
 						}
